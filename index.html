@@ -1,13 +1,36 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Meine erste Website</title>
+
     <style>
         body {
             background-color:darkslategray;
             color: white;
         }
-        h2 {color:rgb(136, 197, 61);
+        h2 {
+            color:rgb(136, 197, 61);
         }
-        p {color:black;
+        p {
+            color:black;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (max-width: 600px) {
+            body {
+                font-size: 18px;
+            }
+            h2, p {
+                font-size: 22px;
+            }
+            button {
+                font-size: 18px;
+                padding: 10px;
+                margin: 5px;
+            }
         }
     </style>
 </head>
