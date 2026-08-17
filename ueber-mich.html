@@ -7,31 +7,77 @@
     <title>Über mich - Pixlpaule Naturfotografie</title>
     <style>
         body {
-            background-color: darkslategray;
-            color: white;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    background-color: darkslategray;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("bilder/mara.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #d6c7a1;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
 
         h1 {
-            color: rgb(136, 197, 61) ;
-        }
+    color: rgb(136, 197, 61);
+    }
         p {
-            color: black;
-            font-size: 18px;
-            line-height: 1.6;
-        }
+    color: #d6c7a1;
+    font-size: 18px;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px black;
+    }
 
         a {
-    color: rgb(136, 197, 61);
-        }
+    color: #d6c7a1;
+    text-shadow: 2px 2px 4px black;
+    }
 
        button {
     font-size: 18px;
     padding: 10px;
     margin: 5px;
         } 
+
+     @media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 15px;
+        font-size: 17px;
+        overflow-x: hidden;
+        background-size: auto 100vh;
+        background-position: 75% center;
+        background-attachment: fixed;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #d6c7a1;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin: 4px 2px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+   
     </style>
 </head>
 

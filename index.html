@@ -7,7 +7,7 @@
     <style>
         body {
             background-color:darkslategray;
-            background-image: url("bilder/mara.jpeg");
+            background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("bilder/mara.jpeg");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -17,10 +17,12 @@
             padding: 0 20px;
         }
         h2 {
-            color:rgb(136, 197, 61);
+            color: #d6c7a1;
+            text-shadow: 2px 2px 4px black;
         }
         p {
-            color:black;
+            color: #d6c7a1;
+            text-shadow: 2px 2px 4px black
         }
         img {
             max-width: 100%;
@@ -28,7 +30,8 @@
         }
 
         a {
-    color: rgb(136, 197, 61);
+    color: #d6c7a1;
+    text-shadow: 2px 2px 4px black;
         }
 
         button {
@@ -37,18 +40,44 @@
     margin: 5px;
         }
         @media (max-width: 600px) {
-            body {
-                font-size: 18px;
-            }
-            h2, p {
-                font-size: 22px;
-            }
-            button {
-                font-size: 18px;
-                padding: 10px;
-                margin: 5px;
-            }
-        }
+    body {
+        font-size: 17px;
+        margin: 0;
+        padding: 15px;
+        background-size: auto 100vh;
+        background-position: 75% center;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #d6c7a1;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.5;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    a {
+        display: inline-block;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin: 4px 2px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+        
     </style>
 </head>
 <body>
